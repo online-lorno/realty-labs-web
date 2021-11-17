@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import type { NextPage } from 'next'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -75,9 +76,9 @@ const Home: NextPage = () => {
                     Company
                   </a>
 
-                  <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                    Log in
-                  </a>
+                  <Link href="/login">
+                    <a className="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+                  </Link>
                 </div>
               </nav>
             </div>
